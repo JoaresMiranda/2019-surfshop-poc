@@ -98,6 +98,7 @@ header,
     flex-wrap: wrap;
     margin: 0 auto;
     max-width: 1440px;
+    justify-content: center;
 }
 .cards__item {
     width: 100%;
@@ -108,10 +109,13 @@ header,
     .cards__item {
         display: inline-block;
         max-width: calc(25% - 1rem);
-        margin: 0 1rem 0 0;
+        margin: 0 0.5rem;
+    }
+    .cards__item:first-child {
+        margin-left: 0;
     }
     .cards__item:last-child {
-        margin: 0;
+        margin-right: 0;
     }
 }
 
