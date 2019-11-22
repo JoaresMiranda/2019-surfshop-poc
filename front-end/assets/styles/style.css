@@ -77,11 +77,11 @@ header,
 .container {
     max-width: 1440px;
     margin: 0 auto;
-    padding: 0 1rem;
+    padding:0.5rem 1rem;
 }
 @media (min-width: 1200px) {
     .container {
-        padding: 2rem;
+        padding: 1rem;
     }
 }
 
@@ -98,41 +98,46 @@ header,
     flex-wrap: wrap;
     margin: 0 auto;
     max-width: 1440px;
+    justify-content: center;
 }
 .cards__item {
     width: 100%;
     background: var(--white);
     margin: 0.5rem 0;
-    display: flex;
 }
 @media (min-width: 1200px) {
     .cards__item {
         display: inline-block;
         max-width: calc(25% - 1rem);
-        margin: 0 1rem 0 0;
+        margin: 0 0.5rem;
+    }
+    .cards__item:first-child {
+        margin-left: 0;
     }
     .cards__item:last-child {
-        margin: 0;
+        margin-right: 0;
     }
 }
-/* TODO: Add class and use a around the items */
-.cards__item > a {
+
+.cards__item a {
     display: flex;
-    margin: 1rem;
+    flex-wrap: nowrap;
+    align-content: center;
+    padding: 1rem;
 }
 @media (min-width: 1200px) {
-    .cards__item > a {
-        display: inline-block;
-        width: 100%;
-        height: auto;
-        max-width: 100%;
-        margin: 0;
+    .cards__item a {
+        flex-wrap: wrap;
+        align-content: unset;
+        padding: unset;
     }
 }
+
 .cards__item__image {
     width: 64px;
     height: 64px;
     object-fit: cover;
+    margin-right: 1rem;
 }
 @media (min-width: 1200px) {
     .cards__item__image {
@@ -140,11 +145,8 @@ header,
         height: auto;
         max-width: 100%;
         object-fit: unset;
+        margin-right: unset;
     }
-}
-.cards__item__title {
-    font-size: 1rem;
-    padding: 1rem 1rem 0 0;
 }
 @media (min-width: 1200px) {
     .cards__item__title {
@@ -153,10 +155,28 @@ header,
     }
 }
 
+.cards__item__title span {
+    color: var(--orange)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* 
 * Hidden items
 */
-
 .newsletter,
 .header,
 .hero,
