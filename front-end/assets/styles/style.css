@@ -16,6 +16,7 @@ Author: Joares Miranda
     --beige: #FDD9A7;
     --dark-grey: #333;
     --grey: #ccc;
+    --medium-grey: #c4c4c4;
     --light-grey: #f4f4f4;
     --white: #fff;
 }
@@ -69,11 +70,11 @@ a:hover {
     border: 1px solid var(--grey);
     font-size: 1rem;
     color: var(--grey);
-    padding: 1rem;
+    padding: 0.8rem;
 }
 
 .button {
-    padding: 1rem 0;
+    padding: .75rem 0;
     cursor: pointer;
     border-radius: 3px;
     border: none;
@@ -227,10 +228,7 @@ header {
         width: 50%;
         align-self: center;
     }
-}
 
-
-@media (min-width: 1024px) {
     .newsletter__item form {
         display: flex;
     }
@@ -246,7 +244,6 @@ header {
 @media (min-width: 1024px) {
     .newsletter__input { 
         margin: 0 0.3rem 0 1rem;
-        width: 100%;
     }
     .newsletter .button { 
         margin: 0 1rem 0 0.5rem;
@@ -256,22 +253,111 @@ header {
 
 
 
+/* 
+* Presentation
+*/
+
+.presentation__container {
+    display: flex;
+    flex-wrap: wrap;
+}
+@media (min-width: 1024px) {
+    .presentation__container {
+        flex-direction: row-reverse;
+        flex-wrap: nowrap;
+    }
+}
+
+.market {
+    margin: 0.5rem 0;
+    text-align: center;
+    width: 100%;
+}
+@media (min-width: 1024px) {
+    .market {
+        width: 50%;
+        padding: 0 1rem;
+    }
+}
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    border-top: 1px solid var(--medium-grey);
+}
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid var(--medium-grey);
+}
+
+.table thead th:nth-child(4),
+.table tbody td:nth-child(4) {
+    width:40%;
+    text-align: left;
+}
+.table td,
+.table th {
+    padding: .5rem;
+    vertical-align: top;
+    border-bottom: 1px solid var(--medium-grey);
+}
+@media (min-width: 1200px) {
+    .table td,
+    .table th {
+        padding: 0.63rem;
+        vertical-align: top;
+        border-bottom: 1px solid var(--medium-grey);
+    }
+}
 
 
+.visitstore {
+    background-color: var(--light-grey);
+    text-align: center;
+    align-self: top;
+    height: 100%;
+    padding: 1rem;
+    margin: 0.5rem 0;
+}
 
+.visitstore__container {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+}
+@media (min-width: 730px) {
+    .visitstore__container {
+        flex-wrap: nowrap;
+    }
+}
+@media (min-width: 1024px) {
+    .visitstore {
+        width: 50%;
+    }
+}
 
+.visitstore__image {
+    max-width: 100%;
+    object-fit: cover;
+    margin: 0 auto 1rem auto;
+}
+@media (min-width: 1024px) {
+    .visitstore__image {
+        margin: 0 auto;
+        padding-right: 1rem;;
+    }
+}
 
-
-
-
-
+.visitstore__text {
+    margin: 0 auto;
+    align-self: center;
+}
 
 /* 
 * Hidden items
 */
 .header,
 .hero,
-.presentation,
 footer {
     display: none;
 }
