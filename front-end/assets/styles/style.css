@@ -252,11 +252,9 @@ header {
 }
 
 
-
 /* 
 * Presentation
 */
-
 .presentation__container {
     display: flex;
     flex-wrap: wrap;
@@ -310,7 +308,6 @@ header {
     }
 }
 
-
 .visitstore {
     background-color: var(--light-grey);
     text-align: center;
@@ -353,11 +350,87 @@ header {
     align-self: center;
 }
 
+
+/* 
+* Presentation
+*/
+footer {
+    background-color: var(--blue);
+    padding: 0.5rem 0;
+}
+@media (min-width: 768px) {
+    footer {
+        text-align: center;
+    }
+}
+footer li {
+    font-size: 0.9rem;
+    list-style: none;
+}
+@media (min-width: 768px) {
+    footer li {
+        display: inline;
+    }
+}
+
+.nav-footer {
+    width: 50%;
+}
+@media (min-width: 768px) {
+    .nav-footer {
+        width: 100%;
+    }
+}
+
+.nav-footer li {
+    margin: 0.5rem 0;
+}
+@media (min-width: 768px) {
+    .nav-footer li {
+        margin: 1rem;
+    }
+}
+.nav-footer li a {
+    color: var(--white);
+}
+
+.social {
+    text-align: right;
+    width: 50%;
+    margin-top: 0.5rem;
+}
+@media (min-width: 768px) {
+    .social {
+        text-align: center;
+        width: 100%;
+    }
+}
+
+.social li {
+    display: inline;
+}
+
+
+.footer__container {
+    display: flex;
+}
+
+@media (min-width: 768px) {
+    .footer__container {
+        display: block;
+    }
+}
+
+
+
+
+
+
+
 /* 
 * Hidden items
 */
 .header,
-.hero,
-footer {
+.hero{
     display: none;
 }
