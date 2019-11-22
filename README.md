@@ -13,6 +13,6 @@ Website created for assessment of development techniques
 - <a href="https://www.figma.com/file/vH40PCWbpgmLxCuwNmjkQO/Layout?node-id=19%3A19">Mobile</a>
 
 ### Screenshots
-[Screenshot Desktop](./design/layout-desktop.png)
+![Screenshot Desktop](./design/layout-desktop.png)
 
-[Screenshot Mobile](./design/layout-mobile.png)
+![Screenshot Mobile](./design/layout-mobile.png)
