@@ -12,12 +12,14 @@ Author: Joares Miranda
 
 :root {
     --orange: #fb4d44;
-    --blue: #000000;
+    --blue: #102F65;
+    --beige: #FDD9A7;
     --dark-grey: #333;
     --grey: #ccc;
     --light-grey: #f4f4f4;
     --white: #fff;
 }
+
 
 /* 
 * Reset
@@ -35,12 +37,13 @@ Author: Joares Miranda
     box-sizing: border-box;
 }
 
+
 /* 
 * Global
 */
 
 body {
-    color: var(---grey);
+    color: var(--dark-grey);
     font-family: 'Montserrat', sans-serif;
 }
 a {
@@ -52,28 +55,46 @@ a:hover {
     text-decoration: underline;
 }
 
-header,
 .btn-primary {
     background-color: var(--orange);
 }
 
+.btn-secondary {
+    background-color: var(--blue);
+}
+
+.input {
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid var(--grey);
+    font-size: 1rem;
+    color: var(--grey);
+    padding: 1rem;
+}
+
 .button {
-    padding: 10px 0;
+    padding: 1rem 0;
     cursor: pointer;
     border-radius: 3px;
+    border: none;
     display: block;
-    font-family: Montserrat;
-    font-style: normal;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 0.9rem;
     text-align: center;
     color: var(--white);
+    width: 100%;
 }
+
+.title-section {
+    font-size: 1.2rem;
+    color: var(--blue);
+    margin-bottom:0.5rem;
+}
+
 
 /* 
 * Container
 */
-
 .container {
     max-width: 1440px;
     margin: 0 auto;
@@ -84,6 +105,15 @@ header,
         padding: 1rem;
     }
 }
+
+
+/* 
+* Header
+*/
+header {
+    background-color: var(--orange);
+}
+
 
 /* 
 * Cards
@@ -103,8 +133,9 @@ header,
     width: 100%;
     background: var(--white);
     margin: 0.5rem 0;
+    border-radius: 3px;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
     .cards__item {
         display: inline-block;
         max-width: calc(25% - 1rem);
@@ -121,7 +152,7 @@ header,
     align-content: center;
     padding: 1rem;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
     .cards__item a {
         flex-wrap: wrap;
         align-content: unset;
@@ -130,21 +161,21 @@ header,
 }
 
 .cards__item__image {
+    max-width: 100%;
     width: 64px;
     height: 64px;
     object-fit: cover;
     margin-right: 1rem;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
     .cards__item__image {
         width: 100%;
         height: auto;
-        max-width: 100%;
         object-fit: unset;
         margin-right: unset;
     }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
     .cards__item__title {
         padding: 1rem;
         text-align: center;
@@ -156,7 +187,69 @@ header,
 }
 
 
+/* 
+* Newsletter
+*/
+.newsletter {
+    background-color: var(--beige);
+    text-align: center;
+    padding: 1rem 0;
+}
+@media (min-width: 1024px) {
+    .newsletter {
+        padding: 0.5rem 0;
+    }
+}
+.newsletter__container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+@media (min-width: 1024px) {
+    .newsletter__container {
+        display: flex;
+        flex-wrap: nowrap;
+        width: 80%;
+        text-align: left;
+    }
+}
 
+.newsletter__item {
+    width: 100%;
+}
+@media (min-width: 1024px) {
+    .newsletter__item {
+        width: 50%;
+        align-self: center;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .newsletter__item form {
+        display: flex;
+    }
+}
+
+
+.newsletter p {
+    line-height: 1.5rem;
+}
+
+.newsletter__input { 
+    margin: 1rem 0;
+}
+@media (min-width: 1024px) {
+    .newsletter__input { 
+        margin: 0 0.3rem 0 1rem;
+        width: 100%;
+    }
+    .newsletter .button { 
+        margin: 0 1rem 0 0.5rem;
+        width: 40%;
+    }
+}
 
 
 
@@ -173,7 +266,6 @@ header,
 /* 
 * Hidden items
 */
-.newsletter,
 .header,
 .hero,
 .presentation,
