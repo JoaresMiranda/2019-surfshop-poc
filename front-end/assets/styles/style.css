@@ -1,0 +1,166 @@
+/*
+Theme Name: Dev Test
+Theme URI: #
+Description: Website created for assessment of development techniques
+Version: 1.0
+Author: Joares Miranda
+*/
+
+/* 
+* Variables
+*/
+
+:root {
+    --orange: #fb4d44;
+    --blue: #000000;
+    --dark-grey: #333;
+    --grey: #ccc;
+    --light-grey: #f4f4f4;
+    --white: #fff;
+}
+
+/* 
+* Reset
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* 
+* Global
+*/
+
+body {
+    color: var(---grey);
+    font-family: 'Montserrat', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: var(---grey);
+    cursor: pointer;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+header,
+.btn-primary {
+    background-color: var(--orange);
+}
+
+.button {
+    padding: 10px 0;
+    cursor: pointer;
+    border-radius: 3px;
+    display: block;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    color: var(--white);
+}
+
+/* 
+* Container
+*/
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+@media (min-width: 1200px) {
+    .container {
+        padding: 2rem;
+    }
+}
+
+/* 
+* Cards
+*/
+
+.cards {
+    background-color: var(--light-grey);
+}
+
+.cards__container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1440px;
+}
+.cards__item {
+    width: 100%;
+    background: var(--white);
+    margin: 0.5rem 0;
+    display: flex;
+}
+@media (min-width: 1200px) {
+    .cards__item {
+        display: inline-block;
+        max-width: calc(25% - 1rem);
+        margin: 0 1rem 0 0;
+    }
+    .cards__item:last-child {
+        margin: 0;
+    }
+}
+/* TODO: Add class and use a around the items */
+.cards__item > a {
+    display: flex;
+    margin: 1rem;
+}
+@media (min-width: 1200px) {
+    .cards__item > a {
+        display: inline-block;
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        margin: 0;
+    }
+}
+.cards__item__image {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+}
+@media (min-width: 1200px) {
+    .cards__item__image {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        object-fit: unset;
+    }
+}
+.cards__item__title {
+    font-size: 1rem;
+    padding: 1rem 1rem 0 0;
+}
+@media (min-width: 1200px) {
+    .cards__item__title {
+        padding: 1rem;
+        text-align: center;
+    }
+}
+
+/* 
+* Hidden items
+*/
+
+.newsletter,
+.header,
+.hero,
+.presentation,
+footer {
+    display: none;
+}
