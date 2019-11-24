@@ -11,7 +11,6 @@
         <!-- beta mode -->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="./assets/styles/style.css" type="text/css" />
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <title>Surfing Good Vibes Store</title>
     </head>
     <body>
@@ -19,10 +18,10 @@
             <section class="header__container container">
                 <a href="#" class="brand"><img src="./assets/images/logo-surfing-good-vibes.svg" alt="Surfing Good Vibes Store logo" title="Surfing Good Vibes Store"/></a>
                 <nav class="header__menu">
-                    <img class="icon__menu" src="./assets/images/icon-menu.svg" alt="" />
-                    <ul class="header__group__links"> <!-- isOpen to open -->
+                    <img class="icon__menu" src="./assets/images/icon-menu.svg" onclick="menuToggle()" />
+                    <ul class="header__group__links">
                         <div class="header__close__menu">
-                            <img class="icon__menu__back" src="./assets/images/icon-menu-back-left.svg" alt="" />
+                            <img class="icon__menu__back" src="./assets/images/icon-menu-back-left.svg" onclick="menuToggle()" />
                         </div>
                         <li><a href="#">About us</a></li>
                         <li><a href="#">Find a board</a></li>
@@ -31,10 +30,10 @@
                     </ul>
                 </nav>
                 <div class="header__search">
-                    <img class="icon-search" src="./assets/images/icon-search.svg" />
-                    <div class="header__search__container"> <!-- isFind to open -->
+                    <img class="icon-search" src="./assets/images/icon-search.svg" onclick="searchToggle()"/>
+                    <div class="header__search__container">
                         <div class="header__close__search">
-                            <img class="icon__search__back" src="./assets/images/icon-menu-back-right.svg" alt="" />
+                            <img class="icon__search__back" src="./assets/images/icon-menu-back-right.svg"  onclick="searchToggle()" />
                         </div>
                         <form action="#" class="frm-search">
                             <p class="header__search__title">What are you looking for?</p>
@@ -195,4 +194,5 @@
             </div>
         </footer>
     </body>
+    <script src="./assets/scripts/main.js"></script>
 </html>
