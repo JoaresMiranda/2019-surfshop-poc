@@ -179,7 +179,6 @@ header {
     .header__menu {
         display: inline-block;
         margin-left: 110px;
-        width: 100%;
     }
 }
 
@@ -190,7 +189,7 @@ header {
     z-index: 2;
     width: 100%;
     height: 100vh;
-    background-color: var(--orange)
+    background-color: var(--orange);
 }
 @media (min-width: 769px) {
     .header__menu .header__group__links {
@@ -225,6 +224,7 @@ header {
     position: absolute;
     top:0;
     left: 0;
+    z-index: 20;
 }
 
 .header__menu .header__group__links.isOpen .icon__menu__close {
@@ -269,7 +269,8 @@ header {
     z-index: 2;
     width: 100%;
     height: 100vh;
-    background-color: var(--orange)
+    background-color: var(--orange);
+    display: none;
 }
 
 .header__search .frm-search {
@@ -317,6 +318,7 @@ header {
     top:0;
     right: 0;
     z-index: 100;
+    display: block;
 }
 @media (min-width: 769px) {
     .header__search .header__search__container.isFind {
@@ -575,7 +577,7 @@ header {
     display: flex;
     flex-wrap: wrap;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
     .presentation__container {
         flex-direction: row-reverse;
         flex-wrap: nowrap;
@@ -587,7 +589,7 @@ header {
     text-align: center;
     width: 100%;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
     .market {
         width: 50%;
         padding: 0 1rem;
@@ -635,15 +637,14 @@ header {
 
 .visitstore__container {
     display: flex;
-    flex-wrap: wrap;
     align-self: center;
 }
-@media (min-width: 730px) {
+@media (max-width: 650px) {
     .visitstore__container {
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
     }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
     .visitstore {
         width: 50%;
     }
@@ -654,7 +655,7 @@ header {
     object-fit: cover;
     margin: 0 auto 1rem auto;
 }
-@media (min-width: 1024px) {
+@media (min-width: 650px) {
     .visitstore__image {
         margin: 0 auto;
         padding-right: 1rem;;
@@ -668,7 +669,7 @@ header {
 
 
 /* 
-* Presentation
+* Footer
 */
 footer {
     background-color: var(--blue);
