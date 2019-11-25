@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="keywords" content="HTML5, CSS3,, dev test, frontend" />
+        <meta name="description" content="The best surf shop" />
+        <meta name="author" content="Joares Miranda" />
+        <meta name="robots" content="noindex,nofollow" />
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="./assets/styles/style.css" type="text/css" />
+        <title>Surfing Good Vibes Store</title>
+    </head>
+    <body>
+        <header>
+            <section class="header__container container">
+                <a href="#" class="brand"><img src="./assets/images/logo-surfing-good-vibes.svg" alt="Surfing Good Vibes Store logo" title="Surfing Good Vibes Store"/></a>
+                <nav class="header__menu">
+                    <img class="icon__menu" src="./assets/images/icon-menu.svg" onclick="menuToggle()" />
+                    <ul class="header__group__links">
+                        <div class="header__close__menu">
+                            <img class="icon__menu__back" src="./assets/images/icon-menu-back-left.svg" onclick="menuToggle()" />
+                        </div>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Find a board</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header__search">
+                    <img class="icon-search" src="./assets/images/icon-search.svg" onclick="searchToggle()"/>
+                    <div class="header__search__container">
+                        <div class="header__close__search">
+                            <img class="icon__search__back" src="./assets/images/icon-menu-back-right.svg"  onclick="searchToggle()" />
+                        </div>
+                        <form action="#" class="frm-search">
+                            <p class="header__search__title">What are you looking for?</p>
+                            <input type="text" class="search__input input" value="keyword" onfocus="if(this.value=='keyword')this.value=''" onblur="if(this.value=='')this.value='keyword'" />
+                            <button class="button btn-secondary" name="find" type="submit">search</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </header>
+        <main>
+            <section class="hero">
+                <div class="hero__container">
+                    <div class="hero__item">
+                        <img class="hero__item__image" src="./uploads/thumbnails/hero-1.jpg" />
+                        <div class="hero__item__content">
+                            <h2 class="hero__item__title"><a href="#">Which board is right for you?</a></h2>
+                            <p>What information you need when choosing the right surfboard for your surf</p>
+                            <p><a class="button btn-primary" href="#" title="Read more">Read more</a></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="cards">
+                <div class="cards__container container">
+                    <div class="cards__item">
+                        <a href="#">
+                            <img src="./uploads/thumbnails/card-1.png" class="cards__item__image"/>
+                            <p class="cards__item__title"><span>Season 2019</span> What are the best peaks to enjoy this holiday season</p>
+                        </a>
+                    </div>
+                    <div class="cards__item">
+                        <a href="#">
+                            <img src="./uploads/thumbnails/card-2.png" class="cards__item__image"/>
+                            <p class="cards__item__title"><span>Oil Stain</span> Which beaches were affected by oil</p>
+                        </a>
+                    </div>
+                    <div class="cards__item">
+                        <a href="#">
+                            <img src="./uploads/thumbnails/card-3.png" class="cards__item__image"/>
+                            <p class="cards__item__title"><span>World Surfing</span> Brazilians stand out and qualify for the final of Portugal</p>
+                        </a>
+                    </div>
+                    <div class="cards__item">
+                        <a href="#">
+                            <img src="./uploads/thumbnails/card-4.png" class="cards__item__image"/>
+                            <p class="cards__item__title"><span>Swell 2019</span> New Year promises high waves on Ceará coast</p>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="newsletter">
+                <div class="newsletter__container container">
+                    <div class="newsletter__item">
+                        <h2 class="title-section">Subscribe our newsletter</h2>
+                        <p>Receive our news from our site and stay on top of the world of surf</p>
+                    </div>
+                    <div class="newsletter__item">
+                        <form>
+                            <input type="text" class="newsletter__input input" value="e-mail" onfocus="if(this.value=='e-mail')this.value=''" onblur="if(this.value=='')this.value='e-mail'" />
+                            <button name="subs" id="subscribe" type="submit" class="button btn-secondary">subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <section class="presentation">
+                <div class="presentation__container container">
+                    <div class="market">
+                        <h2 class="title-section">Surfboard Market</h2>
+                        <p>Used boards in excellent condition and at a special price. Check out our offers</p>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Size</th>
+                                    <th scope="col">$ new</th>
+                                    <th scope="col">$ used</th>
+                                    <th scope="col">Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">6'11"</th>
+                                    <td>1.200</td>
+                                    <td>600</td>
+                                    <td>Urgent sale</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">6'0"</th>
+                                    <td>1.200</td>
+                                    <td>600</td>
+                                    <td>Urgent sale</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">5'10"</th>
+                                    <td>1.200</td>
+                                    <td>600</td>
+                                    <td>Urgent sale</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p><a href="#" class="button btn-primary" title="See more offers">See more offers</a></p>
+                    </div>
+                    <div class="visitstore">
+                        <div class="visitstore__container">
+                            <img class="visitstore__image" src="./uploads/photo-store.png" />
+                            <div class="visitstore__text">
+                                <h2 class="title-section">Visit our store</h2>
+                                <p>We have the best surfboard and accessory options to help you evolve in surfing and make the most of every surfing session.</p>
+                                <p>Contact us, we always have someone to meet you: <a href="tel:+5585999999999">+55 85 9999.9999</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer__container container">
+                <div class="nav-footer">
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Terms &amp; Conditions</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="social">
+                    <ul>
+                        <li>
+                            <a href="#"><img src="./assets/images/icon-facebook.svg"/></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./assets/images/icon-twitter.svg"/></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./assets/images/icon-instagram.svg"/></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </body>
+    <script src="./assets/scripts/main.js"></script>
+</html>
