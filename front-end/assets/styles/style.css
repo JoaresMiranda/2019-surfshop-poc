@@ -269,7 +269,7 @@ header {
     width: 100%;
     height: 100vh;
     background-color: var(--orange);
-    transition: left 0.3s ease-in-out;
+    transition: right 0.5s ease-in-out;
 }
 @media (min-width: 769px) {
     .header__search .header__search__container {
