@@ -376,11 +376,12 @@ header {
     }
 }
 
-.hero__item {
-    display: flex;
-    flex-wrap: wrap;
+@media (min-width: 1024px) {
+    .hero__item {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
-
 @media (min-width: 1024px) {
     .hero__container {
         width: 100%;
@@ -414,7 +415,6 @@ header {
 }
 @media (min-width: 1024px) {
     .hero__item__content {
-
         z-index: 10;
         color: var(--white);
         width: 100%;
