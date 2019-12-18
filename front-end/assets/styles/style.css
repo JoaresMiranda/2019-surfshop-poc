@@ -11,7 +11,9 @@ Author: Joares Miranda
 */
 :root {
     --orange: #fb4d44;
+    --orange-hover: #FE635B;
     --blue: #102F65;
+    --blue-hover: #224E9B;
     --beige: #FDD9A7;
     --dark-grey: #333;
     --grey: #ccc;
@@ -55,9 +57,24 @@ a:hover {
 
 .btn-primary {
     background-color: var(--orange);
+    border: 1px solid var(--orange);
+    transition: 0.8s;
 }
+
+.btn-primary:hover {
+    background-color: var(--white);
+    color: var(--orange);
+    text-decoration: none;
+}
+
 .btn-secondary {
     background-color: var(--blue);
+    border: 1px solid var(--blue);
+    transition: 0.8s;
+}
+.btn-secondary:hover {
+    background-color: var(--white);
+    color: var(--blue);
 }
 
 .input {
@@ -73,7 +90,6 @@ a:hover {
     padding: 0.8rem 0;
     cursor: pointer;
     border-radius: 3px;
-    border: none;
     display: block;
     font-weight: bold;
     font-size: 0.9rem;
