@@ -51,22 +51,30 @@ a {
     color: var(---grey);
     cursor: pointer;
 }
-a:hover,
-.button:hover {
+a:hover {
     text-decoration: underline;
 }
 
 .btn-primary {
     background-color: var(--orange);
+    border: 1px solid var(--orange);
+    transition: 0.8s;
 }
+
 .btn-primary:hover {
-    background-color: var(--orange-hover);
+    background-color: var(--white);
+    color: var(--orange);
+    text-decoration: none;
 }
+
 .btn-secondary {
     background-color: var(--blue);
+    border: 1px solid var(--blue);
+    transition: 0.8s;
 }
 .btn-secondary:hover {
-    background-color: var(--blue-hover);
+    background-color: var(--white);
+    color: var(--blue);
 }
 
 .input {
@@ -82,7 +90,6 @@ a:hover,
     padding: 0.8rem 0;
     cursor: pointer;
     border-radius: 3px;
-    border: none;
     display: block;
     font-weight: bold;
     font-size: 0.9rem;
