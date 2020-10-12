@@ -1,0 +1,31 @@
+{
+  "name": "2019-surfshop-poc",
+  "version": "1.0.0",
+  "description": "First project <3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoaresMiranda/2019-surfshop-poc.git"
+  },
+  "keywords": [
+    "POC",
+    "Surf",
+    "Shop",
+    "SaSS",
+    "ES6"
+  ],
+  "author": "Joares Miranda e Marcelo Glacial",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoaresMiranda/2019-surfshop-poc/issues"
+  },
+  "homepage": "https://github.com/JoaresMiranda/2019-surfshop-poc#readme",
+  "devDependencies": {
+    "handlebars": "^4.7.6",
+    "sass": "^1.27.0",
+    "webpack": "^5.0.0"
+  }
+}

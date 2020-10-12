@@ -2,6 +2,11 @@
 Website created for assessment of development techniques
 
 ## Technology
+- [Handlebars] (https://handlebarsjs.com/)
+- [SASS](https://sass-lang.com/)
+- [Webpack] (https://webpack.js.org/)
+
+## Features
 * Responsive layout
 * HTML / CSS / JS
 
@@ -14,6 +19,14 @@ Website created for assessment of development techniques
 
 ### Live demo
 - <a href="https://joaresmiranda.github.io/2019-surfshop-poc/front-end/">Live demo</a>
+
+## How to install
+- [Install npm](https://www.npmjs.com/get-npm)
+
+Run install on terminal
+```terminal
+npm install
+```
 
 ### Screenshots
 ![Screenshot Desktop](./design/layout-desktop.png)
