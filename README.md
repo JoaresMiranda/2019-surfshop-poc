@@ -28,6 +28,27 @@ Run install on terminal
 npm install
 ```
 
+In front-end folder...
+
+initiate npm 
+```terminal
+npm init
+```
+Install SaSS
+```terminal
+npm i sass --save-dev
+````
+
+Install Webpack
+```terminal
+npm i webpack --save-dev
+````
+
+Install Handlebars
+```terminal
+npm i handlebars --save-dev
+```
+
 ### Screenshots
 ![Screenshot Desktop](./design/layout-desktop.png)
 
