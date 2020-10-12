@@ -52,7 +52,7 @@ Install Handlebars
 npm i handlebars --save-dev
 ```
 
-### Screenshots
+## Screenshots
 ![Screenshot Desktop](./design/layout-desktop.png)
 
 ![Screenshot Mobile](./design/layout-mobile.png)
