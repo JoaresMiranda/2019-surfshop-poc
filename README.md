@@ -1,10 +1,10 @@
-# Dev Test
+# Surfshop POC
 Website created for assessment of development techniques
 
 ## Technology
-- [Handlebars] (https://handlebarsjs.com/)
+- [Handlebars](https://handlebarsjs.com/)
 - [SASS](https://sass-lang.com/)
-- [Webpack] (https://webpack.js.org/)
+- [Webpack](https://webpack.js.org/)
 
 ## Features
 * Responsive layout
