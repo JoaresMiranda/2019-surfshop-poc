@@ -22,6 +22,9 @@ Website created for assessment of development techniques
 
 ## How to install
 - [Install npm](https://www.npmjs.com/get-npm)
+- [Install Handlebars](https://handlebarsjs.com/)
+- [Install SASS](https://sass-lang.com/)
+- [Install Webpack](https://webpack.js.org/)
 
 Run install on terminal
 ```terminal
