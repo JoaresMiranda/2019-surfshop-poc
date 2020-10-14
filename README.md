@@ -31,8 +31,6 @@ Run install on terminal
 npm install
 ```
 
-In front-end folder...
-
 initiate npm 
 ```terminal
 npm init
