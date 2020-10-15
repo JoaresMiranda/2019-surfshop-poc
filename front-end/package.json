@@ -1,0 +1,32 @@
+{
+  "name": "front-end",
+  "version": "1.0.0",
+  "description": "first project <3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoaresMiranda/2019-surfshop-poc.git"
+  },
+  "keywords": [
+    "poc",
+    "front-end",
+    "javascript",
+    "webpack",
+    "sass"
+  ],
+  "author": "Joares",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoaresMiranda/2019-surfshop-poc/issues"
+  },
+  "homepage": "https://github.com/JoaresMiranda/2019-surfshop-poc#readme",
+  "devDependencies": {
+    "handlebars": "^4.7.6",
+    "sass": "^1.27.0",
+    "webpack": "^5.1.0"
+  },
+  "dependencies": {}
+}
